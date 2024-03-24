@@ -2700,7 +2700,7 @@ hr {
 /* line 778, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
 .testimonial-padding {
   padding-top: 1px;
-  padding-bottom: 170px;
+  padding-bottom: 110px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4335,7 +4335,7 @@ hr {
   margin-bottom: 30px;
   display: inline-block;
   font-weight: 300;
-  height: 143px;
+  height: 25%;
 }
 
 /* line 61, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_testimonial.scss */
@@ -4435,6 +4435,10 @@ hr {
 .wantToWork-area {
   background: #f8fcff;
   padding-bottom: 150px;
+}
+
+.faq-style {
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4614,6 +4618,11 @@ hr {
 /* line 42, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_team.scss */
 .team-area .single-team .team-caption h3 a:hover {
   color: #f60101;
+}
+
+.cases-caption h3:hover{
+  color:#f60101;
+  cursor: pointer;
 }
 
 /* line 47, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_team.scss */
@@ -8311,6 +8320,31 @@ del {
 /* line 1067, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_elements.scss */
 .switch-wrap {
   margin-bottom: 10px;
+}
+
+.faq-style {
+  margin-bottom: 20px;
+}
+
+.question {
+  cursor: pointer;
+}
+
+.icon {
+  margin-left: 5px;
+}
+
+.answer1 {
+  display: none;
+  color:blue
+}
+
+.answer2 {
+  display: none;
+}
+
+.answer3 {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
