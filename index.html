@@ -87,7 +87,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img style="width: 50%;" src="assets/img/logo/SAI PRIYA LOGOG ENGLISH.png" alt=""></a>
+                                    <a href="index.html"><img style="width: 33%;" src="assets/img/logo/SAI PRIYA LOGOG ENGLISH.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -489,75 +489,6 @@
                     </div>
                 </div>-->
             </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/Team_Img_1.png" alt="">
-                            <!-- Blog Social -->
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="instructor.html">Bruce Roberts</a></h3>
-                            <p>Volunteer leader</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/Team_Img_2.png" alt="">
-                            <!-- Blog Social -->
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="instructor.html">Robart Rechard</a></h3>
-                            <p>Volunteer leader</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/Team_Img_3.png" alt="">
-                            <!-- Blog Social -->
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="instructor.html">Brendon Tailor</a></h3>
-                            <p>Volunteer leader</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team mb-30">
-                        <div class="team-img">
-                            <img src="assets/img/gallery/Team_Img_4.png" alt="">
-                            <!-- Blog Social -->
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="team-caption">
-                            <h3><a href="instructor.html">Walshr Hasgt</a></h3>
-                            <p>Volunteer leader</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- Team Ara End -->
@@ -720,17 +651,17 @@
 </span>
 </div><br>
 <div class="cases-caption faq-style">
-    <h3 onclick="toggleAnswer()">What is saipriya?</h3>
+    <h3 class="tog1"onclick="toggleAnswer()">What is saipriya?</h3>
     <span class="answer1"><b>saipriya is a charitable organization dedicated to providing aid and support to those in need.</b></span>
 </div>
 
 <div class="cases-caption faq-style">
-    <h3 onclick="toggleAnswer2()">How can I donate to saipriya?</h3>
+    <h3 class="tog2" onclick="toggleAnswer2()">How can I donate to saipriya?</h3>
     <span class="answer2"><b>You can donate to saipriya through our website by clicking on the 'Donate' button on the homepage.</b></span>
 </div>
 
 <div class="cases-caption faq-style">
-    <h3 onclick="toggleAnswer3()">Is my donation tax-deductible?</h3>
+    <h3 class="tog3" onclick="toggleAnswer3()">Is my donation tax-deductible?</h3>
     <span class="answer3"><b>Yes, all donations made to saipriya are tax-deductible.</b></span>
 </div><br><br>
   <!-- <div class="faq-style">
@@ -905,14 +836,21 @@
 
     <script>
 function toggleAnswer() {
+    debugger;
+
   var answer = document.querySelector('.faq-style .answer1');
   var icon = document.querySelector('.faq-style .icon');
+  var tog1 = document.querySelector('.faq-style .tog1');
+
   
   if (answer.style.display === 'block') {
     answer.style.display = 'none';
+    tog1.style.color='#072366';
     icon.textContent = '+';
   } else {
     answer.style.display = 'block';
+    tog1.style.color= 'red';
+
     icon.textContent = '-';
   }
 }
@@ -920,12 +858,16 @@ function toggleAnswer() {
 function toggleAnswer2() {
   var answer = document.querySelector('.faq-style .answer2');
   var icon = document.querySelector('.faq-style .icon');
+  var tog2 = document.querySelector('.faq-style .tog2');
+
   
   if (answer.style.display === 'block') {
     answer.style.display = 'none';
+    tog2.style.color='#072366';
     icon.textContent = '+';
   } else {
     answer.style.display = 'block';
+    tog2.style.color='red';
     icon.textContent = '-';
   }
 }
@@ -933,12 +875,15 @@ function toggleAnswer2() {
 function toggleAnswer3() {
   var answer = document.querySelector('.faq-style .answer3');
   var icon = document.querySelector('.faq-style .icon');
+  var tog3 = document.querySelector('.faq-style .tog3');
   
   if (answer.style.display === 'block') {
     answer.style.display = 'none';
+    tog3.style.color='#072366';
     icon.textContent = '+';
   } else {
     answer.style.display = 'block';
+    tog3.style.color='red';
     icon.textContent = '-';
   }
 }
